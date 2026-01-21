@@ -12,7 +12,7 @@
   --radius-xxl-solar: 22px;
   --shadow-soft-solar: 0 10px 30px rgba(0, 0, 0, .08);
   --container-w-solar: 1200px;
-  --header-h-solar: 72px;
+  --header-h-solar: 75px;
   
   /* for scroll-margin if needed */
 }
@@ -2823,7 +2823,8 @@ body.modal-open {
     object-fit: cover;
     display: block;
   }
-}/* ================== SOLUTIONS ================== */
+}
+/* ================== SOLUTIONS ================== */
 .section-solutions-solar-system-solution{
   background: var(--bg-solar);
   padding: clamp(48px, 2vw, 40px) 0;
@@ -2978,6 +2979,61 @@ color: var(--muted-solar);
   transform: none;
 }
 
+/* ================== SOLUTIONS (RESPONSIVE OVERRIDES ONLY) ================== */
+
+/* Tablet / small desktop: go to 2 cards per row */
+@media (max-width: 992px){
+  .grid-solutions-solar-system-solution{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutions-head-solar-system-solution{
+    align-items: start;
+  }
+}
+
+/* Mobile: stack header + 1 card per row */
+@media (max-width: 640px){
+  .section-solutions-solar-system-solution{
+    padding: 40px 0; /* keep your style, just tighter on mobile */
+  }
+
+  .solutions-head-solar-system-solution{
+    grid-template-columns: 1fr;   /* stacks title + button */
+    gap: 12px;
+    align-items: start;
+  }
+
+  .solutions-viewall-btn-solar-system-solution{
+    justify-self: start;          /* avoids awkward right alignment */
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .grid-solutions-solar-system-solution{
+    grid-template-columns: 1fr;   /* single column cards */
+    gap: 14px;
+  }
+
+  .card-solar-system-solution{
+    min-height: auto;             /* prevents weird stretching on narrow screens */
+  }
+
+  .card-text-solar-system-solution{
+    margin-bottom: 10px;
+  }
+}
+
+/* Very small phones: reduce internal spacing a touch */
+@media (max-width: 380px){
+  .card-solar-system-solution{
+    padding: 14px;
+  }
+
+  .solutions-viewall-btn-solar-system-solution{
+    padding: 10px 12px;
+  }
+}
 
 
 

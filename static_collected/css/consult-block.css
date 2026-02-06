@@ -8,7 +8,7 @@
   --c-muted: #5b6472;
   --c-white: #ffffff;
   --c-ring: rgba(255, 255, 255, .15);
-  --c-shadow: 0 20px 70px rgba(2, 8, 23, .24);
+  --c-shadow: 0 20px 70px rgba(1, 2, 3, 0.24);
 }
 
 /* ===== WRAPPER ===== */

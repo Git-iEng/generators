@@ -22,12 +22,12 @@ section[id] {
 }
 
 /* ============= BASE LAYOUT ============= */
-.container-solar-system {
+.container-generators {
   width: min(92vw, var(--container-w-solar));
   margin-inline: auto;
 }
 
-.section-hero-solar-system {
+.section-hero-generators {
   position: relative;
   background: var(--bg-solar);
   padding-top: 3vw;
@@ -35,7 +35,7 @@ section[id] {
   padding-bottom: 40px;
 }
 
-.grid-hero-solar-system {
+.grid-hero-generators {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
   gap: clamp(24px, 4vw, 48px);
@@ -43,11 +43,11 @@ section[id] {
 }
 
 
-.hero-right-solar-system {
+.hero-right-generators {
   justify-self: end;
 }
 
-.hero-title-solar-system {
+.hero-title-generators {
   font-size: clamp(32px, 5vw, 56px);
   line-height: 1.05;
   letter-spacing: .2px;
@@ -56,23 +56,23 @@ section[id] {
   font-weight: 800;
 }
 
-.accent-solar-system {
+.accent-generators {
   color: var(--teal-700-solar);
 }
 
-.hero-sub-solar-system {
+.hero-sub-generators {
   color: var(--muted-solar);
   margin: 0 0 26px;
   font-size: clamp(15px, 1.8vw, 18px);
 }
 
-.hero-cta-solar-system {
+.hero-cta-generators {
   display: flex;
   gap: 12px;
 }
 
-.btn-primary-solar-system,
-.btn-ghost-solar-system {
+.btn-primary-generators,
+.btn-ghost-generators {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -84,28 +84,28 @@ section[id] {
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 
-.btn-primary-solar-system {
+.btn-primary-generators {
   background: linear-gradient(135deg, var(--teal-700-solar), var(--cyan-800-solar));
   color: var(--white-solar);
   box-shadow: var(--shadow-soft-solar);
 }
 
-.btn-primary-solar-system:hover {
+.btn-primary-generators:hover {
   transform: translateY(-2px);
 }
 
-.btn-ghost-solar-system {
+.btn-ghost-generators {
   background: transparent;
   border-color: var(--cyan-800-solar);
   color: var(--cyan-800-solar);
 }
 
-.btn-ghost-solar-system:hover {
+.btn-ghost-generators:hover {
   background: var(--cyan-800-solar);
   color: var(--white-solar);
 }
 
-.hero-img-solar-system {
+.hero-img-generators {
   width: min(520px, 40vw);
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -114,7 +114,7 @@ section[id] {
   display: block;
 }
 
-.hero-band-solar-system {
+.hero-band-generators {
   display: none;
   position: absolute;
   left: 50%;
@@ -129,14 +129,14 @@ section[id] {
   z-index: 0;
 }
 
-.hero-right-solar-system,
-.hero-left-solar-system {
+.hero-right-generators,
+.hero-left-generators {
   position: relative;
   z-index: 1;
 }
 
 /* Trusted section */
-.section-trusted-solar-system {
+.section-trusted-generators {
   background: #0f1b2a;
   /* deep slate like your screenshot */
   color: #fff;
@@ -144,7 +144,7 @@ section[id] {
   margin-top: clamp(28px, 6vw, 60px);
 }
 
-.trusted-heading-solar-system {
+.trusted-heading-generators {
   text-align: center;
   font-size: clamp(18px, 2.2vw, 24px);
   font-weight: 800;
@@ -153,7 +153,7 @@ section[id] {
 }
 
 /* Logo carousel */
-.logos-wrap-solar-system {
+.logos-wrap-generators {
   overflow: hidden;
   position: relative;
   padding: 6px 0;
@@ -163,20 +163,20 @@ section[id] {
   border-radius: 0;
 }
 
-.logos-track-solar-system {
+.logos-track-generators {
   display: inline-flex;
   align-items: center;
   gap: clamp(28px, 4vw, 46px);
   padding-inline: 12px;
-  animation: marquee-solar-system 28s linear infinite;
+  animation: marquee-generators 28s linear infinite;
   will-change: transform;
 }
 
-.logos-wrap-solar-system:hover .logos-track-solar-system {
+.logos-wrap-generators:hover .logos-track-generators {
   animation-play-state: paused;
 }
 
-.logo-item-solar-system {
+.logo-item-generators {
   height: clamp(22px, 3.2vw, 34px);
   width: auto;
   opacity: .9;
@@ -184,12 +184,12 @@ section[id] {
   transition: opacity .2s ease, transform .2s ease;
 }
 
-.logo-item-solar-system:hover {
+.logo-item-generators:hover {
   opacity: 1;
   transform: translateY(-2px);
 }
 
-@keyframes marquee-solar-system {
+@keyframes marquee-generators {
   from {
     transform: translateX(0);
   }
@@ -202,14 +202,14 @@ section[id] {
 
 
 /* --- DOTS (pagination) --- */
-.dots-solar-system {
+.dots-generators {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: clamp(10px, 2vw, 14px);
 }
 
-.dot-solar-system {
+.dot-generators {
   width: 6px;
   height: 6px;
   background: rgba(255, 255, 255, .35);
@@ -218,32 +218,32 @@ section[id] {
   transition: transform .15s ease, background .2s ease;
 }
 
-.dot-solar-system.is-active-solar-system {
+.dot-generators.is-active-generators {
   background: rgba(255, 255, 255, .85);
   transform: scale(1.15);
 }
 
 /* ============= SCROLL REVEAL ============= */
-.reveal-solar-system {
+.reveal-generators {
   opacity: 0;
   transform: translateY(28px) scale(.98);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
     transform .7s cubic-bezier(.2, .65, .2, 1);
 }
 
-.in-view-solar-system {
+.in-view-generators {
   opacity: 1 !important;
   transform: translateY(0) scale(1) !important;
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .logos-track-solar-system {
+  .logos-track-generators {
     animation: none;
   }
 
-  .reveal-solar-system,
-  .in-view-solar-system {
+  .reveal-generators,
+  .in-view-generators {
     transition: none;
     transform: none;
     opacity: 1;
@@ -252,21 +252,21 @@ section[id] {
 
 /* ============= RESPONSIVE ============= */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-generators {
     grid-template-columns: 1fr;
   }
 
-  .hero-right-solar-system {
+  .hero-right-generators {
     justify-self: start;
   }
 
-  .hero-img-solar-system,
-  .hero-band-solar-system {
+  .hero-img-generators,
+  .hero-band-generators {
     width: 100%;
     max-width: 520px;
   }
 
-  .hero-band-solar-system {
+  .hero-band-generators {
     left: 0;
     transform: none;
   }
@@ -274,22 +274,22 @@ section[id] {
 
 /* --- RESPONSIVE polish --- */
 @media (max-width: 960px) {
-  .grid-hero-solar-system {
+  .grid-hero-generators {
     grid-template-columns: 1fr;
   }
 
-  .hero-img-solar-system {
+  .hero-img-generators {
     width: 100%;
     max-width: 520px;
   }
 }
 
 @media (max-width: 560px) {
-  .logos-track-solar-system {
+  .logos-track-generators {
     gap: 24px;
   }
 
-  .trusted-heading-solar-system {
+  .trusted-heading-generators {
     font-size: 18px;
   }
 }
@@ -301,16 +301,16 @@ section[id] {
 }
 
 /* Make sure the hero image can layer above the next section */
-.section-hero-solar-system {
+.section-hero-generators {
   position: relative;
   z-index: 2;
 }
 
-.hero-right-solar-system {
+.hero-right-generators {
   position: relative;
 }
 
-.hero-img-solar-system {
+.hero-img-generators {
   position: relative;
   z-index: 3;
   /* sits above the Trusted section */
@@ -320,10 +320,10 @@ section[id] {
 }
 
 /* Remove the old base band if still present */
-.hero-band-solar-system {
+.hero-band-generators {
   display: none !important;
 }
-.hero-right-solar-system reveal-solar-system{
+.hero-right-generators reveal-generators{
   padding-bottom: 40px;
 
 }
@@ -332,12 +332,12 @@ section[id] {
 @media (min-width: 961px) {
 
   /* Dip the image down */
-  .hero-img-solar-system {
+  .hero-img-generators {
     transform: translateY(var(--overlap-solar));
   }
 
   /* Pull the Trusted section up so the image overlaps it */
-  .section-trusted-solar-system {
+  .section-trusted-generators {
     position: relative;
     z-index: 1;
     margin-top: calc(var(--overlap-solar) * -1);
@@ -351,11 +351,11 @@ section[id] {
 
 /* ===== Mobile/Tablet: no overlap (clean stack) ===== */
 @media (max-width: 960px) {
-  .hero-img-solar-system {
+  .hero-img-generators {
     transform: none;
   }
 
-  .section-trusted-solar-system {
+  .section-trusted-generators {
     margin-top: clamp(28px, 6vw, 60px);
     /* your normal spacing */
     padding-top: clamp(56px, 8vw, 84px);
@@ -363,7 +363,7 @@ section[id] {
 }
 
 /* Stop marquee while user is paging via dots */
-.logos-track-solar-system.manual-solar-system {
+.logos-track-generators.manual-generators {
   animation: none !important;
 }
 
@@ -372,12 +372,12 @@ section[id] {
 /* why us */
 
 /* ====== WHY section: structure ====== */
-.section-why-solar-system-why {
+.section-why-generators-why {
   background: var(--bg-solar);
   padding: clamp(56px, 8vw, 96px) 0;
 }
 
-.eyebrow-solar-system-why {
+.eyebrow-generators-why {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
@@ -385,7 +385,7 @@ section[id] {
   margin: 0 0 8px;
 }
 
-.title-solar-system-why {
+.title-generators-why {
   text-align: center;
   color: var(--ink-solar);
   font-size: clamp(24px, 4vw, 40px);
@@ -395,7 +395,7 @@ section[id] {
 }
 
 /* Grid with subtle vertical dividers like your screenshot */
-.grid-solar-system-why {
+.grid-generators-why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(18px, 3vw, 28px) clamp(18px, 3vw, 32px);
@@ -403,26 +403,26 @@ section[id] {
 }
 
 /* create column separators */
-.grid-solar-system-why>.card-solar-system-why {
+.grid-generators-why>.card-generators-why {
   position: relative;
   padding: clamp(16px, 3vw, 22px);
   background: transparent;
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(1),
-.grid-solar-system-why>.card-solar-system-why:nth-child(2),
-.grid-solar-system-why>.card-solar-system-why:nth-child(4),
-.grid-solar-system-why>.card-solar-system-why:nth-child(5) {
+.grid-generators-why>.card-generators-why:nth-child(1),
+.grid-generators-why>.card-generators-why:nth-child(2),
+.grid-generators-why>.card-generators-why:nth-child(4),
+.grid-generators-why>.card-generators-why:nth-child(5) {
   border-right: 1px solid rgba(21, 94, 117, .15);
   /* cyan-800 at low opacity */
 }
 
-.grid-solar-system-why>.card-solar-system-why:nth-child(n+4) {
+.grid-generators-why>.card-generators-why:nth-child(n+4) {
   border-top: 1px solid rgba(21, 94, 117, .15);
 }
 
 /* card content */
-.icon-wrap-solar-system-why {
+.icon-wrap-generators-why {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -436,19 +436,19 @@ section[id] {
   flex-shrink: 0;
 }
 
-.icon-wrap-solar-system-why i {
+.icon-wrap-generators-why i {
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-why {
+.card-title-generators-why {
   margin: 0 0 6px;
   font-weight: 800;
   color: var(--ink-solar);
   font-size: clamp(16px, 2vw, 18px);
 }
 
-.card-text-solar-system-why {
+.card-text-generators-why {
   margin: 0;
   color: var(--muted-solar);
   font-size: clamp(14px, 1.9vw, 16px);
@@ -456,13 +456,13 @@ section[id] {
 }
 
 /* ====== Reveal Animations (slow) ======
-   Uses your existing JS: it toggles .in-view-solar-system.
-   Add direction classes ending with -solar-system-why.
+   Uses your existing JS: it toggles .in-view-generators.
+   Add direction classes ending with -generators-why.
 */
-.reveal-left-solar-system-why,
-.reveal-right-solar-system-why,
-.reveal-top-solar-system-why,
-.reveal-bottom-solar-system-why {
+.reveal-left-generators-why,
+.reveal-right-generators-why,
+.reveal-top-generators-why,
+.reveal-bottom-generators-why {
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition:
@@ -472,27 +472,27 @@ section[id] {
 }
 
 /* initial offsets */
-.reveal-left-solar-system-why {
+.reveal-left-generators-why {
   transform: translateX(-28px);
 }
 
-.reveal-right-solar-system-why {
+.reveal-right-generators-why {
   transform: translateX(28px);
 }
 
-.reveal-top-solar-system-why {
+.reveal-top-generators-why {
   transform: translateY(-28px);
 }
 
-.reveal-bottom-solar-system-why {
+.reveal-bottom-generators-why {
   transform: translateY(28px);
 }
 
-/* when JS adds .in-view-solar-system to the same element */
-.in-view-solar-system.reveal-left-solar-system-why,
-.in-view-solar-system.reveal-right-solar-system-why,
-.in-view-solar-system.reveal-top-solar-system-why,
-.in-view-solar-system.reveal-bottom-solar-system-why {
+/* when JS adds .in-view-generators to the same element */
+.in-view-generators.reveal-left-generators-why,
+.in-view-generators.reveal-right-generators-why,
+.in-view-generators.reveal-top-generators-why,
+.in-view-generators.reveal-bottom-generators-why {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -500,10 +500,10 @@ section[id] {
 /* prefer-reduced-motion: show everything without animation */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-solar-system-why,
-  .reveal-right-solar-system-why,
-  .reveal-top-solar-system-why,
-  .reveal-bottom-solar-system-why {
+  .reveal-left-generators-why,
+  .reveal-right-generators-why,
+  .reveal-top-generators-why,
+  .reveal-bottom-generators-why {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -512,31 +512,31 @@ section[id] {
 
 /* ====== Responsive ====== */
 @media (max-width: 992px) {
-  .grid-solar-system-why {
+  .grid-generators-why {
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* tidy borders for 2-column layout */
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-generators-why>.card-generators-why {
     border-right: none;
     border-top: none;
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(odd) {
+  .grid-generators-why>.card-generators-why:nth-child(odd) {
     border-right: 1px solid rgba(21, 94, 117, .15);
   }
 
-  .grid-solar-system-why>.card-solar-system-why:nth-child(n+3) {
+  .grid-generators-why>.card-generators-why:nth-child(n+3) {
     border-top: 1px solid rgba(21, 94, 117, .15);
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solar-system-why {
+  .grid-generators-why {
     grid-template-columns: 1fr;
   }
 
-  .grid-solar-system-why>.card-solar-system-why {
+  .grid-generators-why>.card-generators-why {
     border: none !important;
     padding: 14px 2px;
   }
@@ -567,32 +567,32 @@ body {
 }
 
 /* ===== Layout ===== */
-.section-about-lv-electrical-about- {
+.section-about-generators-about- {
   background: #fff;
   padding: clamp(36px, 2.6vw, 70px) 0;
   /* padding-top: -40px; */
 }
 
-.container-lv-electrical-about- {
+.container-generators-about- {
   width: 100%;
   max-width: var(--container-w-lv);
   margin-inline: auto;
   padding-inline: clamp(16px, 6vw, 28px);
 }
 
-.grid-lv-electrical-about- {
+.grid-generators-about- {
   display: grid;
-  grid-template-columns: 1.05fr 1fr .6fr;
+  grid-template-columns: .4fr .6fr;
   gap: clamp(16px, 3.8vw, 72px);
   align-items: center;
 }
 
 /* ===== Media ===== */
-.media-lv-electrical-about- {
+.media-generators-about- {
   margin: 0;
 }
 
-.img-lv-electrical-about- {
+.img-generators-about- {
   width: 100%;
   height: auto;
   display: block;
@@ -602,11 +602,11 @@ body {
 }
 
 /* ===== Copy ===== */
-.copy-lv-electrical-about- {
+.copy-generators-about- {
   color: var(--ink-lv);
 }
 
-.eyebrow-lv-electrical-about- {
+.eyebrow-generators-about- {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -616,11 +616,11 @@ body {
   margin-bottom: 6px;
 }
 
-.zap-lv-electrical-about- {
+.zap-generators-about- {
   filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .05));
 }
 
-.title-lv-electrical-about- {
+.title-generators-about- {
   margin: 0 0 8px;
   font-weight: 800;
   padding-top: 20px;
@@ -628,13 +628,13 @@ body {
   color: var(--ink-lv);
 }
 
-.lead-lv-electrical-about- {
+.lead-generators-about- {
   margin: 0 0 12px;
   color: var(--muted-lv);
   font-size: clamp(14px, 1.5vw, 16px);
 }
 
-.benefits-lv-electrical-about- {
+.benefits-generators-about- {
   list-style: none;
   padding: 0;
   margin: 0 0 16px;
@@ -642,7 +642,7 @@ body {
   gap: 8px;
 }
 
-.benefits-lv-electrical-about- li {
+.benefits-generators-about- li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -650,7 +650,7 @@ body {
   font-weight: 600;
 }
 
-.dot-lv-electrical-about- {
+.dot-generators-about- {
   width: 8px;
   height: 8px;
   border-radius: 999px;
@@ -659,7 +659,7 @@ body {
   box-shadow: 0 0 0 3px rgba(232, 91, 42, .15);
 }
 
-.btn-primary-lv-electrical-about- {
+.btn-primary-generators-about- {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -672,14 +672,14 @@ body {
   transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
 
-.btn-primary-lv-electrical-about-:hover {
+.btn-primary-generators-about-:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: #274b87;
 }
 
 /* ===== Rating Card ===== */
-.rating-card-lv-electrical-about- {
+.rating-card-generators-about- {
   background: var(--panel-lv);
   border-radius: 12px;
   padding: clamp(14px, 2.6vw, 20px);
@@ -687,13 +687,13 @@ body {
   box-shadow: var(--shadow-soft-lv);
 }
 
-.score-lv-electrical-about- {
+.score-generators-about- {
   font-size: clamp(28px, 3.4vw, 40px);
   font-weight: 900;
   color: #274b87;
 }
 
-.stars-lv-electrical-about- {
+.stars-generators-about- {
   display: inline-flex;
   gap: 2px;
   font-size: 18px;
@@ -701,17 +701,17 @@ body {
   margin: 6px 0 4px;
 }
 
-.stars-lv-electrical-about- span {
+.stars-generators-about- span {
   color: #f59e0b;
 }
 
 /* gold */
-.half-lv-electrical-about- {
+.half-generators-about- {
   color: #f59e0b;
   opacity: .5;
 }
 
-.rating-note-lv-electrical-about- {
+.rating-note-generators-about- {
   margin: 0;
   color: #6b7a8c;
   font-size: 12px;
@@ -719,34 +719,34 @@ body {
 }
 
 /* ===== Reveal animation ===== */
-.reveal-lv-electrical-about- {
+.reveal-generators-about- {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .7s ease, transform .7s ease;
 }
 
-.reveal-in-lv-electrical-about- {
+.reveal-in-generators-about- {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .grid-lv-electrical-about- {
+  .grid-generators-about- {
     grid-template-columns: 1fr 1fr;
   }
 
-  .rating-card-lv-electrical-about- {
+  .rating-card-generators-about- {
     order: 3;
   }
 }
 
 @media (max-width: 680px) {
-  .grid-lv-electrical-about- {
+  .grid-generators-about- {
     grid-template-columns: 1fr;
   }
 
-  .rating-card-lv-electrical-about- {
+  .rating-card-generators-about- {
     max-width: 360px;
   }
 }
@@ -768,7 +768,7 @@ body {
 }
 
 /* =============== HERO / IMAGE STRIP =============== */
-.section-services-lv-electrical-services {
+.section-services-generators-services {
   position: relative;
   color: var(--white-lv);
   /* room for heading row; bottom padding is small because the card will overlap */
@@ -783,7 +783,7 @@ body {
   min-height: clamp(280px, 45vh, 520px);
 }
 
-.section-services-lv-electrical-services::before {
+.section-services-generators-services::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -793,7 +793,7 @@ body {
 }
 
 /* ===== Header Row ===== */
-.services-head-lv-electrical-services {
+.services-head-generators-services {
   position: relative;
   z-index: 1;
   max-width: var(--container-w-lv);
@@ -805,7 +805,7 @@ body {
   gap: 16px;
 }
 
-.eyebrow-lv-electrical-services {
+.eyebrow-generators-services {
   display: inline-block;
   color: #1dcabc;
   font-weight: 800;
@@ -814,14 +814,14 @@ body {
   margin-bottom: 6px;
 }
 
-.title-lv-electrical-services {
+.title-generators-services {
   margin: 0;
   font-weight: 800;
   font-size: clamp(22px, 3vw, 34px);
   line-height: 1.2;
 }
 
-.btn-orange-lv-electrical-services {
+.btn-orange-generators-services {
   align-self: start;
   background: var(--cta-orange-lv);
   color: #fff;
@@ -833,7 +833,7 @@ body {
   transition: transform .2s ease, filter .2s ease, background .2s ease;
 }
 
-.btn-orange-lv-electrical-services:hover {
+.btn-orange-generators-services:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: var(--brand-blue-lv);
@@ -841,7 +841,7 @@ body {
 
 /* =============== OVERLAP SECTION (WHITE CARD) =============== */
 /* This is your second <section>. It pulls upward by the overlap distance. */
-.section-services-lv-electrical-services2 {
+.section-services-generators-services2 {
   position: relative;
   margin-top: calc(-1 * var(--services-overlap));
   /* keep stacking context tidy */
@@ -850,14 +850,14 @@ body {
 }
 
 /* Wrapper that centers the card and adds side padding */
-.services-card-lv-electrical-services {
+.services-card-generators-services {
   max-width: var(--container-w-lv);
   margin: 0 auto;
   padding: 0 clamp(16px, 3vw, 28px);
 }
 
 /* The white card */
-.grid-lv-electrical-services {
+.grid-generators-services {
   background: #fff;
   border: 1px solid var(--panel-border-lv);
   /* border-radius: 18px; */
@@ -868,19 +868,19 @@ body {
 }
 
 /* Thin dividers between columns on desktop */
-.grid-lv-electrical-services>.svc-item-lv-electrical-services:not(:last-child) {
+.grid-generators-services>.svc-item-generators-services:not(:last-child) {
   border-right: 1px solid var(--panel-border-lv);
 }
 
 /* =============== SERVICE ITEM =============== */
-.svc-item-lv-electrical-services {
+.svc-item-generators-services {
   padding: clamp(18px, 3vw, 26px);
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   gap: 10px;
 }
 
-.svc-icon-lv-electrical-services {
+.svc-icon-generators-services {
   width: 28px;
   height: 28px;
   display: grid;
@@ -888,38 +888,38 @@ body {
   color: #1f2937;
 }
 
-.svc-icon-lv-electrical-services i {
+.svc-icon-generators-services i {
   font-size: 22px;
 }
 
-.svc-title-lv-electrical-services {
+.svc-title-generators-services {
   margin: 0;
   font-size: clamp(16px, 1.8vw, 18px);
   font-weight: 800;
   color: var(--ink-lv);
 }
 
-.svc-title-lv-electrical-services a {
+.svc-title-generators-services a {
   color: inherit;
   text-decoration: none;
 }
 
-.svc-title-lv-electrical-services a:hover {
+.svc-title-generators-services a:hover {
   text-decoration: underline;
 }
 
-.svc-text-lv-electrical-services {
+.svc-text-generators-services {
   margin: 0;
   color: var(--muted-lv);
   font-size: 14px;
 }
 
-/* .arrow-lv-electrical-services{ font-weight: 800; } */
+/* .arrow-generators-services{ font-weight: 800; } */
 
 /* =============== SCROLL REVEAL (optional) =============== */
-.reveal-left-lv-electrical-services,
-.reveal-right-lv-electrical-services,
-.reveal-up-lv-electrical-services {
+.reveal-left-generators-services,
+.reveal-right-generators-services,
+.reveal-up-generators-services {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -927,37 +927,37 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-left-lv-electrical-services {
+.reveal-left-generators-services {
   transform: translateX(-28px);
 }
 
-.reveal-right-lv-electrical-services {
+.reveal-right-generators-services {
   transform: translateX(28px);
 }
 
-.reveal-in-lv-electrical-services {
+.reveal-in-generators-services {
   opacity: 1 !important;
   transform: translateX(0) translateY(0) !important;
 }
 
 /* =============== RESPONSIVE =============== */
 @media (max-width: 1024px) {
-  .services-head-lv-electrical-services {
+  .services-head-generators-services {
     grid-template-columns: 1fr;
     row-gap: 12px;
   }
 
-  .btn-orange-lv-electrical-services {
+  .btn-orange-generators-services {
     justify-self: start;
   }
 
-  .grid-lv-electrical-services {
+  .grid-generators-services {
     grid-template-columns: 1fr;
     /* stack cards */
     /* border-radius: 14px; */
   }
 
-  .grid-lv-electrical-services>.svc-item-lv-electrical-services:not(:last-child) {
+  .grid-generators-services>.svc-item-generators-services:not(:last-child) {
     border-right: none;
     border-bottom: 1px solid var(--panel-border-lv);
   }
@@ -970,7 +970,7 @@ body {
     --services-overlap: clamp(20px, 7vw, 40px);
   }
 
-  .section-services-lv-electrical-services {
+  .section-services-generators-services {
     padding-bottom: clamp(28px, 5vw, 40px);
     min-height: clamp(260px, 40vh, 420px);
     background-position: center;
@@ -981,9 +981,9 @@ body {
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-lv-electrical-services,
-  .reveal-right-lv-electrical-services,
-  .reveal-up-lv-electrical-services {
+  .reveal-left-generators-services,
+  .reveal-right-generators-services,
+  .reveal-up-generators-services {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -1003,7 +1003,7 @@ body {
 }
 
 /* Details row spans full grid width and keeps your flat style */
-.svc-detail-lv-electrical-services {
+.svc-detail-generators-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1026,14 +1026,14 @@ body {
 }
 
 /* Detail content layout */
-.svc-detail-lv-electrical-services h3 {
+.svc-detail-generators-services h3 {
   margin: 0 0 6px 0;
   font-size: clamp(16px, 1.8vw, 20px);
   font-weight: 800;
   color: var(--ink-lv);
 }
 
-.svc-detail-lv-electrical-services p {
+.svc-detail-generators-services p {
   margin: 0 0 10px 0;
   color: var(--muted-lv);
   font-size: 14px;
@@ -1050,9 +1050,9 @@ body {
 }
 
 /* Re-animate on scroll up/down (toggle reveal-in when entering/leaving) */
-.reveal-left-lv-electrical-services,
-.reveal-right-lv-electrical-services,
-.reveal-up-lv-electrical-services {
+.reveal-left-generators-services,
+.reveal-right-generators-services,
+.reveal-up-generators-services {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -1060,21 +1060,21 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-left-lv-electrical-services {
+.reveal-left-generators-services {
   transform: translateX(-28px);
 }
 
-.reveal-right-lv-electrical-services {
+.reveal-right-generators-services {
   transform: translateX(28px);
 }
 
-.reveal-in-lv-electrical-services {
+.reveal-in-generators-services {
   opacity: 1 !important;
   transform: translateX(0) translateY(0) !important;
 }
 
 /* Floating Explore/View Less button */
-.btn-fab-lv-electrical-services {
+.btn-fab-generators-services {
   position: fixed;
   right: clamp(2px, 1vw, 2px);
   bottom: clamp(2px, 1vw, 2px);
@@ -1093,7 +1093,7 @@ body {
   transition: transform .2s ease, filter .2s ease, background .2s ease;
 }
 
-.btn-fab-lv-electrical-services:hover {
+.btn-fab-generators-services:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
   background: var(--brand-blue-lv);
@@ -1101,13 +1101,13 @@ body {
 
 /* If users prefer reduced motion, keep it steady */
 @media (prefers-reduced-motion: reduce) {
-  .btn-fab-lv-electrical-services {
+  .btn-fab-generators-services {
     transition: none;
   }
 }
 
 /* makes the header (with the button) stick to the top */
-.services-head-lv-electrical-services {
+.services-head-generators-services {
   position: sticky;
   top: 0;
   z-index: 5;
@@ -1128,19 +1128,19 @@ body {
 }
 
 /* ===== section wrapper ===== */
-.section-process-lv-electrical-process {
+.section-process-generators-process {
   background: #fff;
   padding: clamp(36px, 2vw, 80px) 0;
 }
 
-.container-lv-electrical-process {
+.container-generators-process {
   width: 100%;
   max-width: var(--container-w-lv);
   margin-inline: auto;
   padding-inline: clamp(16px, 3vw, 28px);
 }
 
-.grid-lv-electrical-process {
+.grid-generators-process {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   gap: clamp(18px, 4vw, 44px);
@@ -1148,11 +1148,11 @@ body {
 }
 
 /* ===== left column ===== */
-.media-lv-electrical-process {
+.media-generators-process {
   margin: 0 0 clamp(12px, 2vw, 16px);
 }
 
-.img-lv-electrical-process {
+.img-generators-process {
   width: 100%;
   height: auto;
   display: block;
@@ -1161,7 +1161,7 @@ body {
   box-shadow: var(--shadow-soft-lv);
 }
 
-.eyebrow-lv-electrical-process {
+.eyebrow-generators-process {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1171,36 +1171,36 @@ body {
   margin: 6px 0;
 }
 
-.bolt-icon-lv-electrical-process {
+.bolt-icon-generators-process {
   width: 16px;
   height: 16px;
   object-fit: contain;
   display: inline-block;
 }
 
-.title-lv-electrical-process {
+.title-generators-process {
   margin: 4px 0 8px;
   font-weight: 800;
   font-size: clamp(22px, 2.6vw, 30px);
   color: var(--ink-lv);
 }
 
-.lead-lv-electrical-process {
+.lead-generators-process {
   margin: 0 0 14px;
   color: var(--muted-lv);
   font-size: clamp(14px, 1.6vw, 16px);
   max-width: 56ch;
 }
 
-/* NOTE: the button uses .btn-orange-lv-electrical-services from your existing CSS */
+/* NOTE: the button uses .btn-orange-generators-services from your existing CSS */
 
 /* ===== right column: vertical timeline ===== */
-.timeline-lv-electrical-process {
+.timeline-generators-process {
   position: relative;
   background: #fff;
 }
 
-.timeline-list-lv-electrical-process {
+.timeline-list-generators-process {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1208,7 +1208,7 @@ body {
 }
 
 /* Vertical line */
-.timeline-list-lv-electrical-process::before {
+.timeline-list-generators-process::before {
   content: "";
   position: absolute;
   left: 20px;
@@ -1221,7 +1221,7 @@ body {
 }
 
 /* Step row */
-.timeline-item-lv-electrical-process {
+.timeline-item-generators-process {
   position: relative;
   display: grid;
   grid-template-columns: 48px 1fr;
@@ -1231,7 +1231,7 @@ body {
 }
 
 /* Icon bubble */
-.step-icon-lv-electrical-process {
+.step-icon-generators-process {
   width: 60px;
   height: 60px;
   border-radius: 999px;
@@ -1244,7 +1244,7 @@ body {
   z-index: 1;
 }
 
-.step-icon-lv-electrical-process img {
+.step-icon-generators-process img {
   width: 25px;
   height: 25px;
   object-fit: contain;
@@ -1254,23 +1254,23 @@ body {
 }
 
 /* Content */
-.step-content-lv-electrical-process {
+.step-content-generators-process {
   padding-bottom: 10px;
   border-bottom: 1px dashed #d5deea;
 }
 
-.timeline-item-lv-electrical-process:last-child .step-content-lv-electrical-process {
+.timeline-item-generators-process:last-child .step-content-generators-process {
   border-bottom: 0;
 }
 
-.step-title-lv-electrical-process {
+.step-title-generators-process {
   margin: 2px 0 4px;
   font-weight: 800;
   color: var(--ink-lv);
   font-size: clamp(16px, 1.8vw, 18px);
 }
 
-.step-text-lv-electrical-process {
+.step-text-generators-process {
   margin: 0;
   color: var(--muted-lv);
   font-size: 14px;
@@ -1278,8 +1278,8 @@ body {
 }
 
 /* ===== reveal on scroll ===== */
-.reveal-left-lv-electrical-process,
-.reveal-right-lv-electrical-process {
+.reveal-left-generators-process,
+.reveal-right-generators-process {
   opacity: 0;
   transform: translateX(-24px);
   transition: opacity .7s cubic-bezier(.2, .65, .2, 1),
@@ -1287,28 +1287,28 @@ body {
   will-change: opacity, transform;
 }
 
-.reveal-right-lv-electrical-process {
+.reveal-right-generators-process {
   transform: translateX(24px);
 }
 
-.reveal-in-lv-electrical-process {
+.reveal-in-generators-process {
   opacity: 1 !important;
   transform: none !important;
 }
 
 /* ===== responsive ===== */
 @media (max-width: 1024px) {
-  .grid-lv-electrical-process {
+  .grid-generators-process {
     grid-template-columns: 1fr;
   }
 
-  .timeline-list-lv-electrical-process::before {
+  .timeline-list-generators-process::before {
     left: 20px;
   }
 }
 
 @media (max-width: 560px) {
-  .timeline-item-lv-electrical-process {
+  .timeline-item-generators-process {
     grid-template-columns: 44px 1fr;
   }
 }
@@ -1316,8 +1316,8 @@ body {
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
-  .reveal-left-lv-electrical-process,
-  .reveal-right-lv-electrical-process {
+  .reveal-left-generators-process,
+  .reveal-right-generators-process {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -1325,12 +1325,12 @@ body {
 }
 
 /* ====== FULL-BLEED LAYOUT & NO GAP ====== */
-.section-why-le-electrical-why-us {
+.section-why-generators-why-us {
   background: #fff;
   padding: clamp(36px, 1vw, 84px) 0;
 }
 
-.container-le-electrical-why-us {
+.container-generators-why-us {
   width: 100%;
   max-width: none;
   /* full width */
@@ -1341,7 +1341,7 @@ body {
 }
 
 /* Two-column split: no gutter */
-.grid-le-electrical-why-us {
+.grid-generators-why-us {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1354,7 +1354,7 @@ body {
 }
 
 /* LEFT dark panel: no outer radius */
-.left-le-electrical-why-us {
+.left-generators-why-us {
   background: #0e141c;
   color: #eef3fb;
   border-radius: 0;
@@ -1366,11 +1366,11 @@ body {
 
 
 /* RIGHT image: flush, no radius */
-.media-le-electrical-why-us {
+.media-generators-why-us {
   margin: 0;
 }
 
-.img-le-electrical-why-us {
+.img-generators-why-us {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1382,7 +1382,7 @@ body {
 }
 
 /* ====== CONTENT (unchanged visuals) ====== */
-.eyebrow-le-electrical-why-us {
+.eyebrow-generators-why-us {
   display: inline-flex;
   gap: 8px;
   align-items: center;
@@ -1393,20 +1393,20 @@ body {
   margin-bottom: 6px;
 }
 
-.title-le-electrical-why-us {
+.title-generators-why-us {
   margin: 4px 0 12px;
   font-size: clamp(22px, 3vw, 34px);
   font-weight: 800;
   line-height: 1.2;
 }
 
-.cards-le-electrical-why-us {
+.cards-generators-why-us {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
 
-.card-le-electrical-why-us {
+.card-generators-why-us {
   border: 1px solid rgba(255, 255, 255, .14);
   border-radius: 12px;
   padding: 16px;
@@ -1414,41 +1414,41 @@ body {
   transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 
-.card-le-electrical-why-us:hover {
+.card-generators-why-us:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
   border-color: rgba(255, 255, 255, .28);
 }
 
-.card-title-le-electrical-why-us {
+.card-title-generators-why-us {
   margin: 0 0 6px;
   font-weight: 800;
 }
 
-.card-text-le-electrical-why-us {
+.card-text-generators-why-us {
   margin: 0;
   color: #9fb0c6;
   line-height: 1.65;
 }
 
-.footnote-le-electrical-why-us {
+.footnote-generators-why-us {
   margin: 12px 0 0;
   color: #9fb0c6;
 }
 
-.footnote-le-electrical-why-us a {
+.footnote-generators-why-us a {
   color: #1dcabc;
   font-weight: 800;
   text-decoration: none;
 }
 
-.footnote-le-electrical-why-us a:hover {
+.footnote-generators-why-us a:hover {
   text-decoration: underline;
 }
 
 /* ====== MIDDLE CIRCLE: ARROW ONLY ====== */
 /* keep link element as-is; we’ll hide its inner text visually and render an arrow */
-.floating-cta-le-electrical-why-us {
+.floating-cta-generators-why-us {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1462,16 +1462,16 @@ body {
   place-items: center;
   text-decoration: none;
   box-shadow: 0 12px 28px rgba(232, 91, 42, .35);
-  animation: spin-le-electrical-why-us 7.5s linear infinite;
+  animation: spin-generators-why-us 7.5s linear infinite;
 }
 
-.floating-cta-le-electrical-why-us:hover {
+.floating-cta-generators-why-us:hover {
   filter: brightness(1.05);
   transform: translate(-50%, -50%) scale(1.03);
 }
 
 /* Hide any inner text (e.g., 'Contact Us') accessibly */
-.floating-cta-le-electrical-why-us>* {
+.floating-cta-generators-why-us>* {
   position: absolute !important;
   width: 1px;
   height: 1px;
@@ -1481,7 +1481,7 @@ body {
 }
 
 /* Render arrow */
-.floating-cta-le-electrical-why-us::after {
+.floating-cta-generators-why-us::after {
   content: "➜";
   font-weight: 900;
   font-size: 22px;
@@ -1489,7 +1489,7 @@ body {
 }
 
 /* keep gentle spin */
-@keyframes spin-le-electrical-why-us {
+@keyframes spin-generators-why-us {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -1500,44 +1500,44 @@ body {
 }
 
 /* ====== REVEALS (unchanged) ====== */
-.reveal-left-le-electrical-why-us,
-.reveal-right-le-electrical-why-us,
-.reveal-top-le-electrical-why-us,
-.reveal-bottom-le-electrical-why-us {
+.reveal-left-generators-why-us,
+.reveal-right-generators-why-us,
+.reveal-top-generators-why-us,
+.reveal-bottom-generators-why-us {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .8s cubic-bezier(.2, .65, .2, 1),
     transform .8s cubic-bezier(.2, .65, .2, 1);
 }
 
-.reveal-left-le-electrical-why-us {
+.reveal-left-generators-why-us {
   transform: translateX(-28px);
 }
 
-.reveal-right-le-electrical-why-us {
+.reveal-right-generators-why-us {
   transform: translateX(28px);
 }
 
-.reveal-top-le-electrical-why-us {
+.reveal-top-generators-why-us {
   transform: translateY(-28px);
 }
 
-.reveal-bottom-le-electrical-why-us {
+.reveal-bottom-generators-why-us {
   transform: translateY(28px);
 }
 
-.reveal-in-le-electrical-why-us {
+.reveal-in-generators-why-us {
   opacity: 1 !important;
   transform: none !important;
 }
 
 /* ====== RESPONSIVE ====== */
 @media (max-width:1024px) {
-  .grid-le-electrical-why-us {
+  .grid-generators-why-us {
     grid-template-columns: 1fr;
   }
 
-  .floating-cta-le-electrical-why-us {
+  .floating-cta-generators-why-us {
     position: static;
     margin: 12px auto 0;
     transform: none;
@@ -1546,13 +1546,13 @@ body {
     height: 64px;
   }
 
-  .img-le-electrical-why-us {
+  .img-generators-why-us {
     height: 320px;
   }
 }
 
 @media (max-width:640px) {
-  .cards-le-electrical-why-us {
+  .cards-generators-why-us {
     grid-template-columns: 1fr;
   }
 }
@@ -1560,22 +1560,22 @@ body {
 /* Reduced motion */
 @media (prefers-reduced-motion:reduce) {
 
-  .reveal-left-le-electrical-why-us,
-  .reveal-right-le-electrical-why-us,
-  .reveal-top-le-electrical-why-us,
-  .reveal-bottom-le-electrical-why-us {
+  .reveal-left-generators-why-us,
+  .reveal-right-generators-why-us,
+  .reveal-top-generators-why-us,
+  .reveal-bottom-generators-why-us {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 
-  .floating-cta-le-electrical-why-us {
+  .floating-cta-generators-why-us {
     animation: none !important;
   }
 }
 
 /* ===== Details layout with optional image ===== */
-.svc-detail-lv-electrical-services {
+.svc-detail-generators-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1663,7 +1663,7 @@ body {
   }
 }
 
-.svc-detail-lv-electrical-services {
+.svc-detail-generators-services {
   grid-column: 1 / -1;
   display: none;
   background: #fff;
@@ -1742,7 +1742,7 @@ body {
 }
 
 /* Compact CTA button */
-.svc-cta-lv-electrical-services {
+.svc-cta-generators-services {
   position: relative;
   align-self: end;
   justify-self: start;
@@ -1764,7 +1764,7 @@ body {
 }
 
 /* default arrow */
-.arrow-lv-electrical-services {
+.arrow-generators-services {
   font-weight: 800;
   font-size: 18px;
   line-height: 1;
@@ -1772,7 +1772,7 @@ body {
 }
 
 /* hidden label that slides in on hover */
-.svc-cta-lv-electrical-services::after {
+.svc-cta-generators-services::after {
   /* content: "Learn More"; */
   white-space: nowrap;
   /* keep on one line */
@@ -1784,37 +1784,37 @@ body {
 }
 
 /* hover: turn blue and show label */
-.svc-cta-lv-electrical-services:hover {
+.svc-cta-generators-services:hover {
   background: var(--brand-blue-lv);
   color: #fff;
   border-color: var(--brand-blue-lv);
 }
 
-.svc-cta-lv-electrical-services:hover .arrow-lv-electrical-services {
+.svc-cta-generators-services:hover .arrow-generators-services {
   transform: translateX(4px);
 }
 
-.svc-cta-lv-electrical-services:hover::after {
+.svc-cta-generators-services:hover::after {
   opacity: 1;
   transform: translateX(0);
 }
 
 /* keyboard focus */
-.svc-cta-lv-electrical-services:focus-visible {
+.svc-cta-generators-services:focus-visible {
   outline: 3px solid #ffb26b;
   outline-offset: 2px;
 }
 
 /* optional: make it full-width on very small screens */
 @media (max-width: 560px) {
-  .svc-cta-lv-electrical-services {
+  .svc-cta-generators-services {
     width: 100%;
     justify-content: center;
   }
 }
 
 /* --- MODAL (gated docs) --- */
-.modal-csc-solar-system-csc-products {
+.modal-csc-generators-csc-products {
   position: fixed;
   /* cover the whole viewport */
   inset: 0;
@@ -1824,11 +1824,11 @@ body {
   /* sit above everything */
 }
 
-.modal-csc-solar-system-csc-products[aria-hidden="false"] {
+.modal-csc-generators-csc-products[aria-hidden="false"] {
   display: block;
 }
 
-.modal-backdrop-csc-solar-system-csc-products {
+.modal-backdrop-csc-generators-csc-products {
   position: absolute;
   inset: 0;
   /* dim + blur the entire page behind the modal */
@@ -1839,7 +1839,7 @@ body {
   z-index: 0;
 }
 
-.modal-dialog-csc-solar-system-csc-products {
+.modal-dialog-csc-generators-csc-products {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1853,7 +1853,7 @@ body {
   /* above backdrop */
 }
 
-.modal-close-csc-solar-system-csc-products {
+.modal-close-csc-generators-csc-products {
   position: absolute;
   top: 10px;
   right: 12px;
@@ -1872,12 +1872,12 @@ body.modal-open {
 /* Projects */
 
 /* ================== PROJECTS ================== */
-.section-projects-solar-system-projects {
+.section-projects-generators-projects {
   background: var(--bg-solar);
   padding: clamp(28px, 3vw, 46px) 0;
 }
 
-.header-projects-solar-system-projects {
+.header-projects-generators-projects {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 14px;
@@ -1885,14 +1885,14 @@ body.modal-open {
   margin-bottom: clamp(16px, 1vw, 24px);
 }
 
-.projects-kicker-solar-system-projects {
+.projects-kicker-generators-projects {
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
   margin: 0 0 6px;
 }
 
-.projects-title-solar-system-projects {
+.projects-title-generators-projects {
   margin: 0;
   color: var(--ink-solar);
   font-weight: 800;
@@ -1900,12 +1900,12 @@ body.modal-open {
 }
 
 /* arrows */
-.projects-nav-solar-system-projects {
+.projects-nav-generators-projects {
   display: inline-flex;
   gap: 10px;
 }
 
-.btn-nav-solar-system-projects {
+.btn-nav-generators-projects {
   width: 38px;
   height: 38px;
   display: inline-grid;
@@ -1918,20 +1918,20 @@ body.modal-open {
   transition: background .2s, color .2s, transform .2s, opacity .2s;
 }
 
-.btn-nav-solar-system-projects:hover {
+.btn-nav-generators-projects:hover {
   background: var(--teal-700-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
-.btn-nav-solar-system-projects[disabled] {
+.btn-nav-generators-projects[disabled] {
   opacity: .45;
   cursor: not-allowed;
   transform: none;
 }
 
 /* viewport + track */
-.projects-viewport-solar-system-projects {
+.projects-viewport-generators-projects {
   --gap-projects: 18px;
   --cards-per-view: 4;
   /* desktop default */
@@ -1942,7 +1942,7 @@ body.modal-open {
   border-radius: 14px;
 }
 
-.projects-track-solar-system-projects {
+.projects-track-generators-projects {
   display: flex;
   gap: var(--gap-projects);
   padding: 2px;
@@ -1950,7 +1950,7 @@ body.modal-open {
 }
 
 /* card size is based on viewport width for perfect paging */
-.project-card-solar-system-projects {
+.project-card-generators-projects {
   flex: 0 0 calc((100% - (var(--cards-per-view) - 1) * var(--gap-projects)) / var(--cards-per-view));
   scroll-snap-align: start;
   background: #fff;
@@ -1963,46 +1963,46 @@ body.modal-open {
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 
-.project-card-solar-system-projects:hover {
+.project-card-generators-projects:hover {
   transform: translateY(-3px);
   border-color: var(--teal-700-solar);
   box-shadow: 0 16px 36px rgba(0, 0, 0, .08);
 }
 
-.project-media-solar-system-projects {
+.project-media-generators-projects {
   margin: 0;
   aspect-ratio: 14/13;
   overflow: hidden;
 }
 
-.project-media-solar-system-projects img {
+.project-media-generators-projects img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.project-body-solar-system-projects {
+.project-body-generators-projects {
   padding: 12px 14px 10px 14px;
   position: relative;
   border-top: 1px solid rgba(15, 118, 110, .12);
 }
 
-.project-title-solar-system-projects {
+.project-title-generators-projects {
   margin: 0 0 6px;
   font-size: clamp(15px, 1.9vw, 17px);
   font-weight: 800;
   color: var(--ink-solar);
 }
 
-.project-meta-solar-system-projects {
+.project-meta-generators-projects {
   margin: 0;
   color: var(--muted-solar);
   font-size: clamp(12.5px, 1.7vw, 13.5px);
 }
 
 /* thin bottom rule + arrow at far right like your mock */
-.project-body-solar-system-projects::after {
+.project-body-generators-projects::after {
   content: "";
   display: block;
   height: 1px;
@@ -2010,7 +2010,7 @@ body.modal-open {
   margin-top: 10px;
 }
 
-.project-arrow-solar-system-projects {
+.project-arrow-generators-projects {
   position: absolute;
   /* right: 12px; bottom: 8px;
   width: 26px; height: 26px; */
@@ -2022,59 +2022,59 @@ body.modal-open {
   /* transition: transform .2s ease, background .2s ease, color .2s ease; */
 }
 
-.project-card-solar-system-projects:hover .project-arrow-solar-system-projects {
+.project-card-generators-projects:hover .project-arrow-generators-projects {
   transform: translateX(2px);
   color: var(--teal-700-solar);
 }
 
 /* Reveal directions for this section */
-.reveal-top-solar-system-projects,
-.reveal-bottom-solar-system-projects {
+.reveal-top-generators-projects,
+.reveal-bottom-generators-projects {
   opacity: 0;
   transform: translateY(26px);
   transition: opacity 1.0s cubic-bezier(.2, .65, .2, 1),
     transform 1.0s cubic-bezier(.2, .65, .2, 1);
 }
 
-.reveal-top-solar-system-projects {
+.reveal-top-generators-projects {
   transform: translateY(-26px);
 }
 
-.in-view-solar-system.reveal-top-solar-system-projects,
-.in-view-solar-system.reveal-bottom-solar-system-projects {
+.in-view-generators.reveal-top-generators-projects,
+.in-view-generators.reveal-bottom-generators-projects {
   opacity: 1;
   transform: none;
 }
 
 /* Responsive cards per view */
 @media (max-width: 1200px) {
-  .projects-viewport-solar-system-projects {
+  .projects-viewport-generators-projects {
     --cards-per-view: 3;
   }
 }
 
 @media (max-width: 900px) {
-  .projects-viewport-solar-system-projects {
+  .projects-viewport-generators-projects {
     --cards-per-view: 2;
   }
 
-  .header-projects-solar-system-projects {
+  .header-projects-generators-projects {
     grid-template-columns: 1fr;
     align-items: start;
   }
 
-  .section-hero-solar-system {
+  .section-hero-generators {
     padding-top: 5rem;
 
   }
 }
 
 @media (max-width: 560px) {
-  .projects-viewport-solar-system-projects {
+  .projects-viewport-generators-projects {
     --cards-per-view: 1;
   }
 
-  .section-hero-solar-system {
+  .section-hero-generators {
     padding-top: 5rem;
 
   }
@@ -2260,15 +2260,15 @@ body.modal-open {
 }
 
 /* ---------- Section ---------- */
-.lv-electric-panel-project{
+.generators-1-project{
   background: var(--lv-bg);
   color: var(--lv-ink);
   padding: clamp(40px, 1vw, 20px) 16px;
 }
-.lv-epp-container{ max-width:1180px; margin:0 auto; }
+.generators-container{ max-width:1180px; margin:0 auto; }
 
-.lv-epp-header{ margin-bottom: 26px; }
-.lv-epp-kicker{
+.generators-header{ margin-bottom: 26px; }
+.generators-kicker{
   display:inline-block;
   font:600 12px/1.1 system-ui,Segoe UI,Roboto,Arial,sans-serif;
   letter-spacing:.12em; text-transform:uppercase;
@@ -2276,23 +2276,23 @@ body.modal-open {
   background: #155f7537;
   padding:8px 12px; border-radius:999px;
 }
-.lv-epp-header h2{
+.generators-header h2{
   margin:12px 0 0;
   font:700 clamp(22px,3.5vw,34px)/1.25 system-ui,Segoe UI,Roboto,Arial,sans-serif;
 }
 
 /* ---------- Grid ---------- */
-.lv-epp-grid{
+.generators-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap:22px;
   margin-top: 16px;
 }
-@media (max-width:1024px){ .lv-epp-grid{ grid-template-columns: repeat(2,1fr); } }
-@media (max-width:640px){  .lv-epp-grid{ grid-template-columns: 1fr; } }
+@media (max-width:1024px){ .generators-grid{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width:640px){  .generators-grid{ grid-template-columns: 1fr; } }
 
 /* ---------- Card ---------- */
-.lv-epp-card{
+.generators-card{
   background: var(--lv-card-bg);
   border:1px solid var(--lv-border);
   border-radius: var(--lv-radius);
@@ -2301,17 +2301,17 @@ body.modal-open {
   transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
   opacity: 1;
 }
-.lv-epp-card:hover{
+.generators-card:hover{
   transform: translateY(-6px);
   box-shadow: var(--lv-shadow);
   border-color:#98e7ff;
 }
 
-.lv-epp-media{ position:relative; aspect-ratio:16/9; overflow:hidden; }
-.lv-epp-media img{ width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.03); transition:transform .5s ease; }
-.lv-epp-card:hover .lv-epp-media img{ transform:scale(1.06); }
+.generators-media{ position:relative; aspect-ratio:16/9; overflow:hidden; }
+.generators-media img{ width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.03); transition:transform .5s ease; }
+.generators-card:hover .generators-media img{ transform:scale(1.06); }
 
-.lv-epp-year{
+.generators-year{
   position:absolute; inset:14px auto auto 14px;
   background: linear-gradient(135deg, var(--lv-orange), var(--lv-orange-400));
   color:#fff; font-weight:700; font-size:12px;
@@ -2319,19 +2319,19 @@ body.modal-open {
   box-shadow: 0 6px 18px rgba(0,0,0,.18);
 }
 
-.lv-epp-body{ padding:18px 18px 20px; color: var(--lv-ink); }
-.lv-epp-body h3{ margin:2px 0 8px; font:700 18px/1.35 system-ui,Segoe UI,Roboto,Arial,sans-serif; }
-.lv-epp-client{ color: var(--lv-muted); margin:0 0 10px; font-size:14px; }
-.lv-epp-points{ margin:0; padding:0 0 0 18px; color:#253048; }
-.lv-epp-points li{ margin:6px 0; }
+.generators-body{ padding:18px 18px 20px; color: var(--lv-ink); }
+.generators-body h3{ margin:2px 0 8px; font:700 18px/1.35 system-ui,Segoe UI,Roboto,Arial,sans-serif; }
+.generators-client{ color: var(--lv-muted); margin:0 0 10px; font-size:14px; }
+.generators-points{ margin:0; padding:0 0 0 18px; color:#253048; }
+.generators-points li{ margin:6px 0; }
 
 /* ---------- More button ---------- */
-.lv-epp-more-wrap{
+.generators-more-wrap{
   grid-column:1 / -1;
   display:flex; justify-content:center; align-items:center;
   padding:8px 0 6px;
 }
-.lv-epp-more{
+.generators-more{
   border:0; cursor:pointer;
   color:#023e50;
   font-weight:700;
@@ -2341,12 +2341,12 @@ body.modal-open {
   box-shadow: 0 10px 24px #90e4fe68;;
   transition: transform .25s ease, box-shadow .25s ease, filter .2s ease;
 }
-.lv-epp-more:hover{
+.generators-more:hover{
   transform: translateY(-2px);
   box-shadow: 0 14px 28px #149cc69d;
   background: linear-gradient(135deg, #42d3ff, #25ccff);
 }
-.lv-epp-more:active{ transform: translateY(0); }
+.generators-more:active{ transform: translateY(0); }
 
 /* ---------- Reveal animations ---------- */
 .reveal-left{ opacity:0; transform: translateX(-40px); }
@@ -2369,13 +2369,13 @@ body.modal-open {
    ======================================================================= */
 
 /* Default portrait: 3:4 */
-.lv-electric-panel-project .lv-epp-media{
+.generators-1-project .generators-media{
   aspect-ratio: 10/11;        /* vertical rectangle */
   max-height: 360px;          /* keeps cards consistent on large screens */
   overflow: hidden;
 }
 
-.lv-electric-panel-project .lv-epp-media img{
+.generators-1-project .generators-media img{
   width: 100%;
   height: 100%;
   object-fit: cover;          /* fills the frame without distortion */
@@ -2386,18 +2386,18 @@ body.modal-open {
 
 /* Slightly taller cap on very wide screens */
 @media (min-width: 1200px){
-  .lv-electric-panel-project .lv-epp-media{
+  .generators-1-project .generators-media{
     max-height: 640px;
   }
 }
 
 /* Optional: add class "is-23" on a card to use a 2:3 portrait */
-.lv-electric-panel-project .lv-epp-card.is-23 .lv-epp-media{
+.generators-1-project .generators-card.is-23 .generators-media{
   aspect-ratio: 2 / 3;
 }
 
 /* Keep the year pill positioned nicely on taller images */
-.lv-electric-panel-project .lv-epp-year{
+.generators-1-project .generators-year{
   inset: 12px auto auto 12px;
 }
 
@@ -2597,22 +2597,22 @@ body.modal-open {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-generators-solution {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .solutions-head-solar-system-solution {
+  .solutions-head-generators-solution {
     grid-template-columns: 1fr;
     align-items: start;
   }
 
-  .solutions-viewall-btn-solar-system-solution {
+  .solutions-viewall-btn-generators-solution {
     justify-self: start;
   }
 }
 
 @media (max-width: 560px) {
-  .grid-solutions-solar-system-solution {
+  .grid-solutions-generators-solution {
     grid-template-columns: 1fr;
   }
 }
@@ -2722,18 +2722,18 @@ body.modal-open {
 }
 
 /* show only 2 cards when collapsed */
-#solutions-grid-solar-system-solution.is-collapsed-solar-system-solution .card-solar-system-solution:nth-of-type(3) {
+#solutions-grid-generators-solution.is-collapsed-generators-solution .card-generators-solution:nth-of-type(3) {
   display: none;
 }
 
 /* center the "View LV Switchboards" button */
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-generators-solution {
   justify-self: center;
   margin-top: 1.25rem;
 }
 
 /* make list items real bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-generators-solution {
   list-style: disc;
   padding-left: 1.3rem;
 }
@@ -2742,7 +2742,7 @@ body.modal-open {
 
 
 
-.container-lv-electrical-process {
+.container-generators-process {
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;
@@ -2752,36 +2752,36 @@ body.modal-open {
 /* === MOBILE LAYOUT: stack image + copy on top, timeline below === */
 @media (max-width: 768px) {
   /* one column stack */
-  .grid-lv-electrical-process {
+  .grid-generators-process {
     grid-template-columns: 1fr;
   }
 
   /* add a bit of space between image block and timeline */
-  .timeline-lv-electrical-process {
+  .timeline-generators-process {
     margin-top: 24px;
   }
 
   /* keep timeline aligned nicely on small screens */
-  .timeline-list-lv-electrical-process::before {
+  .timeline-list-generators-process::before {
     left: 28px;
   }
 
-  .timeline-item-lv-electrical-process {
+  .timeline-item-generators-process {
     grid-template-columns: 44px 1fr;
   }
 }
 /* === MOBILE PADDING FIX (20px all around) === */
 @media (max-width: 768px) {
-  .section-process-lv-electrical-process {
+  .section-process-generators-process {
     padding: 20px !important;
   }
 
-  .container-lv-electrical-process {
+  .container-generators-process {
     padding: 20px !important;
   }
 
-  .intro-lv-electrical-process,
-  .timeline-lv-electrical-process {
+  .intro-generators-process,
+  .timeline-generators-process {
     padding: 0 0; /* keep inner spacing controlled */
   }
 }
@@ -2789,35 +2789,35 @@ body.modal-open {
 @media (max-width: 640px) {
 
   /* Let the section span full width on phones */
-  .lv-electric-panel-project {
+  .generators-1-project {
     padding-left: 0;
     padding-right: 0;
   }
 
   /* Container fills the viewport with small, even padding */
-  .lv-epp-container {
+  .generators-container {
     max-width: none;
     margin: 0;
     padding-inline: 12px;  /* equal left/right gutter */
   }
 
   /* One card per row, full width */
-  .lv-epp-grid {
+  .generators-grid {
     grid-template-columns: 1fr;
     justify-items: stretch;
   }
 
-  .lv-epp-card {
+  .generators-card {
     width: 100%;
     margin-inline: 0;      /* no extra space on the right */
   }
 
   /* Make sure the media fills the card width with no inner gap */
-  .lv-epp-media {
+  .generators-media {
     width: 100%;
   }
 
-  .lv-epp-media img {
+  .generators-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2825,16 +2825,16 @@ body.modal-open {
   }
 }
 /* ================== SOLUTIONS ================== */
-.section-solutions-solar-system-solution{
+.section-solutions-generators-solution{
   background: var(--bg-solar);
   padding: clamp(48px, 2vw, 40px) 0;
 }
-.solutions-subtitle-solar-system-solution{
+.solutions-subtitle-generators-solution{
 color: var(--muted-solar);
   margin: 0 0 26px;
   font-size: clamp(15px, 1.8vw, 18px);
 }
-.solutions-head-solar-system-solution{
+.solutions-head-generators-solution{
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 14px;
@@ -2842,21 +2842,21 @@ color: var(--muted-solar);
   margin-bottom: clamp(18px, 1vw, 28px);
 }
 
-.solutions-kicker-solar-system-solution{
+.solutions-kicker-generators-solution{
   color: var(--teal-700-solar);
   font-weight: 800;
   letter-spacing: .4px;
   margin: 0 0 6px;
 }
 
-.solutions-title-solar-system-solution{
+.solutions-title-generators-solution{
   margin: 0;
   color: var(--ink-solar);
   font-weight: 800;
   font-size: clamp(22px, 3.6vw, 34px);
 }
 
-.solutions-viewall-btn-solar-system-solution{
+.solutions-viewall-btn-generators-solution{
   justify-self: end;
   padding: 10px 14px;
   font-weight: 600;
@@ -2867,27 +2867,27 @@ color: var(--muted-solar);
   cursor: pointer;
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
-.solutions-viewall-btn-solar-system-solution:hover{
+.solutions-viewall-btn-generators-solution:hover{
   background: var(--teal-700-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* Grid – DESKTOP: 3 cards per row */
-.grid-solutions-solar-system-solution{
+.grid-solutions-generators-solution{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(14px, 3vw, 24px);
 }
 
 /* Show only first row by default (3 cards) */
-.grid-solutions-solar-system-solution.is-collapsed-solar-system-solution
-.extra-card-solar-system-solution{
+.grid-solutions-generators-solution.is-collapsed-generators-solution
+.extra-card-generators-solution{
   display: none;
 }
 
 /* Card */
-.card-solar-system-solution{
+.card-generators-solution{
   background: #fff;
   border: 1px solid rgba(21,94,117,.18);
   border-radius: 14px;
@@ -2898,13 +2898,13 @@ color: var(--muted-solar);
   min-height: 120px;
   transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
-.card-solar-system-solution:hover{
+.card-generators-solution:hover{
   border-color: var(--teal-700-solar);
   transform: translateY(-3px);
   box-shadow: 0 16px 36px rgba(0,0,0,.08);
 }
 
-.card-icon-solar-system-solution{
+.card-icon-generators-solution{
   width: 42px;
   height: 42px;
   border-radius: 10px;
@@ -2916,18 +2916,18 @@ color: var(--muted-solar);
   margin-bottom: 10px;
   box-shadow: 0 10px 22px rgba(15,118,110,.25);
 }
-.card-icon-solar-system-solution i{
+.card-icon-generators-solution i{
   font-size: 22px;
   line-height: 1;
 }
 
-.card-title-solar-system-solution{
+.card-title-generators-solution{
   margin: 0 0 6px;
   font-size: clamp(16px, 2.2vw, 18px);
   font-weight: 800;
   color: var(--ink-solar);
 }
-.card-text-solar-system-solution{
+.card-text-generators-solution{
   margin: 0 0 12px;
   color: var(--muted-solar);
   line-height: 1.65;
@@ -2935,7 +2935,7 @@ color: var(--muted-solar);
 }
 
 /* Link CTA pinned to bottom */
-.card-link-solar-system-solution{
+.card-link-generators-solution{
   margin-top: auto;
   align-self: flex-start;
   display: inline-flex;
@@ -2949,32 +2949,32 @@ color: var(--muted-solar);
   font-weight: 600;
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
-.card-link-solar-system-solution:hover{
+.card-link-generators-solution:hover{
   background: var(--cyan-800-solar);
   color: #fff;
   transform: translateY(-1px);
 }
 
 /* Reveal directions (slow) */
-.reveal-left-solar-system-solution,
-.reveal-right-solar-system-solution,
-.reveal-top-solar-system-solution,
-.reveal-bottom-solar-system-solution{
+.reveal-left-generators-solution,
+.reveal-right-generators-solution,
+.reveal-top-generators-solution,
+.reveal-bottom-generators-solution{
   opacity: 0;
   transform: translate3d(0,0,0);
   transition: opacity 1.05s cubic-bezier(.2,.65,.2,1),
               transform 1.05s cubic-bezier(.2,.65,.2,1);
   will-change: opacity, transform;
 }
-.reveal-left-solar-system-solution{  transform: translateX(-26px); }
-.reveal-right-solar-system-solution{ transform: translateX( 26px); }
-.reveal-top-solar-system-solution{   transform: translateY(-26px); }
-.reveal-bottom-solar-system-solution{transform: translateY( 26px); }
+.reveal-left-generators-solution{  transform: translateX(-26px); }
+.reveal-right-generators-solution{ transform: translateX( 26px); }
+.reveal-top-generators-solution{   transform: translateY(-26px); }
+.reveal-bottom-generators-solution{transform: translateY( 26px); }
 
-.in-view-solar-system.reveal-left-solar-system-solution,
-.in-view-solar-system.reveal-right-solar-system-solution,
-.in-view-solar-system.reveal-top-solar-system-solution,
-.in-view-solar-system.reveal-bottom-solar-system-solution{
+.in-view-generators.reveal-left-generators-solution,
+.in-view-generators.reveal-right-generators-solution,
+.in-view-generators.reveal-top-generators-solution,
+.in-view-generators.reveal-bottom-generators-solution{
   opacity: 1;
   transform: none;
 }
@@ -2983,54 +2983,54 @@ color: var(--muted-solar);
 
 /* Tablet / small desktop: go to 2 cards per row */
 @media (max-width: 992px){
-  .grid-solutions-solar-system-solution{
+  .grid-solutions-generators-solution{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .solutions-head-solar-system-solution{
+  .solutions-head-generators-solution{
     align-items: start;
   }
 }
 
 /* Mobile: stack header + 1 card per row */
 @media (max-width: 640px){
-  .section-solutions-solar-system-solution{
+  .section-solutions-generators-solution{
     padding: 40px 0; /* keep your style, just tighter on mobile */
   }
 
-  .solutions-head-solar-system-solution{
+  .solutions-head-generators-solution{
     grid-template-columns: 1fr;   /* stacks title + button */
     gap: 12px;
     align-items: start;
   }
 
-  .solutions-viewall-btn-solar-system-solution{
+  .solutions-viewall-btn-generators-solution{
     justify-self: start;          /* avoids awkward right alignment */
     width: fit-content;
     max-width: 100%;
   }
 
-  .grid-solutions-solar-system-solution{
+  .grid-solutions-generators-solution{
     grid-template-columns: 1fr;   /* single column cards */
     gap: 14px;
   }
 
-  .card-solar-system-solution{
+  .card-generators-solution{
     min-height: auto;             /* prevents weird stretching on narrow screens */
   }
 
-  .card-text-solar-system-solution{
+  .card-text-generators-solution{
     margin-bottom: 10px;
   }
 }
 
 /* Very small phones: reduce internal spacing a touch */
 @media (max-width: 380px){
-  .card-solar-system-solution{
+  .card-generators-solution{
     padding: 14px;
   }
 
-  .solutions-viewall-btn-solar-system-solution{
+  .solutions-viewall-btn-generators-solution{
     padding: 10px 12px;
   }
 }

@@ -1619,18 +1619,18 @@
 }
 
 /* show only 2 cards when collapsed */
-#solutions-grid-solar-system-solution.is-collapsed-solar-system-solution .card-solar-system-solution:nth-of-type(3) {
+#solutions-grid-generators-solution.is-collapsed-generators-solution .card-generators-solution:nth-of-type(3) {
   display: none;
 }
 
 /* center the "View LV Switchboards" button */
-.solutions-viewall-btn-solar-system-solution {
+.solutions-viewall-btn-generators-solution {
   justify-self: center;
   margin-top: 1.25rem;
 }
 
 /* make list items real bullets inside cards */
-.card-points-solar-system-solution {
+.card-points-generators-solution {
   list-style: disc;
   padding-left: 1.3rem;
 }
@@ -1639,7 +1639,7 @@
 
 
 
-.container-lv-electrical-process {
+.container-generators-process {
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;
@@ -1649,36 +1649,36 @@
 /* === MOBILE LAYOUT: stack image + copy on top, timeline below === */
 @media (max-width: 768px) {
   /* one column stack */
-  .grid-lv-electrical-process {
+  .grid-generators-process {
     grid-template-columns: 1fr;
   }
 
   /* add a bit of space between image block and timeline */
-  .timeline-lv-electrical-process {
+  .timeline-generators-process {
     margin-top: 24px;
   }
 
   /* keep timeline aligned nicely on small screens */
-  .timeline-list-lv-electrical-process::before {
+  .timeline-list-generators-process::before {
     left: 28px;
   }
 
-  .timeline-item-lv-electrical-process {
+  .timeline-item-generators-process {
     grid-template-columns: 44px 1fr;
   }
 }
 /* === MOBILE PADDING FIX (20px all around) === */
 @media (max-width: 768px) {
-  .section-process-lv-electrical-process {
+  .section-process-generators-process {
     padding: 20px !important;
   }
 
-  .container-lv-electrical-process {
+  .container-generators-process {
     padding: 20px !important;
   }
 
-  .intro-lv-electrical-process,
-  .timeline-lv-electrical-process {
+  .intro-generators-process,
+  .timeline-generators-process {
     padding: 0 0; /* keep inner spacing controlled */
   }
 }
@@ -1686,35 +1686,35 @@
 @media (max-width: 640px) {
 
   /* Let the section span full width on phones */
-  .lv-electric-panel-project {
+  .generators-1-project {
     padding-left: 0;
     padding-right: 0;
   }
 
   /* Container fills the viewport with small, even padding */
-  .lv-epp-container {
+  .generators-container {
     max-width: none;
     margin: 0;
     padding-inline: 12px;  /* equal left/right gutter */
   }
 
   /* One card per row, full width */
-  .lv-epp-grid {
+  .generators-grid {
     grid-template-columns: 1fr;
     justify-items: stretch;
   }
 
-  .lv-epp-card {
+  .generators-card {
     width: 100%;
     margin-inline: 0;      /* no extra space on the right */
   }
 
   /* Make sure the media fills the card width with no inner gap */
-  .lv-epp-media {
+  .generators-media {
     width: 100%;
   }
 
-  .lv-epp-media img {
+  .generators-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
